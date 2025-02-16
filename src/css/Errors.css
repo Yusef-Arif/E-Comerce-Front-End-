@@ -1,0 +1,42 @@
+
+.Error404 { 
+  background-color: black; 
+  color: #fff;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.button-Error404 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  border: 1px solid #efefef;
+  padding: .5em;
+  border-radius: 3px;
+  float: left;
+  margin: 6em 0 0 -155px;
+  left: 55%;
+  position: relative;
+  transition: all .3s linear;
+}
+
+.button-Error404:hover {
+  background-color: white;
+  color: black;
+}
+
+.Error404 p {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 100;
+}
+
+.Error404 h1 {
+  text-align: center;
+  font-size: 15em;
+  font-weight: 600;
+}

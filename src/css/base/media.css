@@ -1,0 +1,48 @@
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+/* 992px */
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (max-width: 992px) {
+.form-style-s{
+  background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/Rectangle2.jpg");
+  margin: 20px;
+}
+.form-content input{
+  width: 100%;
+}
+.error{
+  width: 100%;
+}
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}

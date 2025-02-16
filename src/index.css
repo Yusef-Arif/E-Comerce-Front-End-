@@ -1,13 +1,56 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Lato", sans-serif !important;
+}
+.container{
+  margin:0 auto;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h100{
+  height: 100vh;
+}
+.h-100{
+  height: 100%;
+}
+.white{
+  background-color: #F2F0F1;
+}
+.NavLink{
+  text-decoration: none;
+}
+.cursor-pointer{
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.pagesButtons{
+  color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: larger;
+  font-weight: 700;
+  transition: .3s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+}
+.pagesButtons h3{
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.activeButton,
+.pagesButtons:hover{
+  color: black;
+  background-color: white;
+}
+.notActiveButton{
+  color: white;
+  background-color: black;
 }

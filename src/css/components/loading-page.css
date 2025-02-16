@@ -1,0 +1,168 @@
+.spinner-container{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.452);
+}
+.spinner {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+}
+.spinner div {
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  background: #000000;
+  transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+  animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
+}
+
+.spinner div:nth-child(1) {
+  --delay: 0.1;
+  --rotation: 36;
+  --translation: 150;
+}
+
+.spinner div:nth-child(2) {
+  --delay: 0.2;
+  --rotation: 72;
+  --translation: 150;
+}
+
+.spinner div:nth-child(3) {
+  --delay: 0.3;
+  --rotation: 108;
+  --translation: 150;
+}
+
+.spinner div:nth-child(4) {
+  --delay: 0.4;
+  --rotation: 144;
+  --translation: 150;
+}
+
+.spinner div:nth-child(5) {
+  --delay: 0.5;
+  --rotation: 180;
+  --translation: 150;
+}
+
+.spinner div:nth-child(6) {
+  --delay: 0.6;
+  --rotation: 216;
+  --translation: 150;
+}
+
+.spinner div:nth-child(7) {
+  --delay: 0.7;
+  --rotation: 252;
+  --translation: 150;
+}
+
+.spinner div:nth-child(8) {
+  --delay: 0.8;
+  --rotation: 288;
+  --translation: 150;
+}
+
+.spinner div:nth-child(9) {
+  --delay: 0.9;
+  --rotation: 324;
+  --translation: 150;
+}
+
+.spinner div:nth-child(10) {
+  --delay: 1;
+  --rotation: 360;
+  --translation: 150;
+}
+
+@keyframes spinner-fzua35 {
+  0%, 10%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 100% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+  }
+
+  50% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+  }
+}
+/* Loader 2 */
+/* From Uiverse.io by satyamchaudharydev */ 
+.loader {
+  display: block;
+  width: 130px;
+  height: 4px;
+  border-radius: 30px;
+  background-color: rgba(0,0,0,0.2);
+  position: relative;
+  padding: 7px;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  background: black;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 96%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
+  }
+}
+
+/* for ProgressLoading */
+.Progress-loading {
+  background-color: #1c1c1c;
+  width: 200px;
+  padding: 10px;
+  height: 20px;
+  border-radius: 3rem;
+  transition: .3s ease-in-out;
+  position: relative;
+  margin-bottom: 35px;
+  margin-left: 15px;
+}
+
+.percentage {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 80%;
+  max-width: 98%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(150, 149, 149, 0.945) 70%);
+  border-radius: 3rem;
+  transition: .1s linear;
+}
+.percentage::after {
+  content: attr(data-percentage);
+  position: absolute;
+  padding: 7px 3px;
+  border-radius: 6px;
+  right: -16px;
+  background-color: black;
+  height: 29px;
+  color: white;
+  font-size: small;
+  top: 28px;
+  width: 40px;
+
+}
+.percentage::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -7px;
+  border: 10px solid;
+  border-color: transparent transparent black transparent;
+}
